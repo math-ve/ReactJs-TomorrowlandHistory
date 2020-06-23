@@ -11,7 +11,6 @@ const Home = (props) => {
     const {editions} = props;
 
     const tl1 = gsap.timeline();
-    var sc1 = [];
   
     //HEADER TEXT ANIMATION
     useEffect(() => {
@@ -670,7 +669,7 @@ const Home = (props) => {
       .addLabel("aftermovie-15")
   
           
-      sc1 = ScrollTrigger.create({
+      ScrollTrigger.create({
         animation: tl1,
         trigger: ".editions-main-container",
         start: "top top",
@@ -763,7 +762,7 @@ const Home = (props) => {
                 <div className="slow-anim slow-anim-3"></div>
             </div>
           {editions.map((edition) => (
-            <Editions data={edition.data} timeline={tl1} scroll={sc1} key={edition.data.year} />
+            <Editions data={edition.data} key={edition.data.year} />
           ))}
         </div>
       </div>

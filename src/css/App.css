@@ -332,6 +332,136 @@ EDITIONS
   background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(65,0,134,1) 100%);
 }
 
+.e-anim-1-2005 {
+  background: rgb(110,208,22);
+  background: linear-gradient(90deg, rgba(110,208,22,1) 0%, rgba(251,38,107,1) 100%);
+}
+
+.e-anim-2-2005 {
+  background: rgb(251,38,107);
+  background: linear-gradient(90deg, rgba(251,38,107,1) 0%, rgba(22,144,208,1) 100%);
+}
+
+.e-anim-1-2006 {
+  background: rgb(251,156,38);
+  background: linear-gradient(90deg, rgba(251,156,38,1) 0%, rgba(7,115,153,1) 100%);
+}
+
+.e-anim-2-2006 {
+  background: rgb(7,115,153);
+  background: linear-gradient(90deg, rgba(7,115,153,1) 0%, rgba(184,38,251,1) 100%);
+}
+
+.e-anim-1-2007 {
+  background: rgb(152,153,7);
+  background: linear-gradient(90deg, rgba(152,153,7,1) 0%, rgba(135,242,241,1) 100%);
+}
+
+.e-anim-2-2007 {
+  background: rgb(135,242,241);
+  background: linear-gradient(90deg, rgba(135,242,241,1) 0%, rgba(134,7,153,1) 100%);
+}
+
+.e-anim-1-2008 {
+  background: rgb(135,144,242);
+  background: linear-gradient(90deg, rgba(135,144,242,1) 0%, rgba(31,159,44,1) 100%);
+}
+
+.e-anim-2-2008 {
+  background: rgb(31,159,44);
+  background: linear-gradient(90deg, rgba(31,159,44,1) 0%, rgba(135,144,242,1) 100%);
+}
+
+.e-anim-1-2009 {
+  background: rgb(60,214,42);
+  background: linear-gradient(90deg, rgba(60,214,42,1) 0%, rgba(234,242,135,1) 100%);
+}
+
+.e-anim-2-2009 {
+  background: rgb(234,242,135);
+  background: linear-gradient(90deg, rgba(234,242,135,1) 0%, rgba(214,42,42,1) 100%);
+}
+
+.e-anim-1-2010 {
+  background: rgb(214,42,210);
+  background: linear-gradient(90deg, rgba(214,42,210,1) 0%, rgba(242,135,135,1) 100%);
+}
+
+.e-anim-2-2010 {
+  background: rgb(242,135,135);
+  background: linear-gradient(90deg, rgba(242,135,135,1) 0%, rgba(60,214,42,1) 100%);
+}
+
+.e-anim-1-2011 {
+  background: rgb(110,208,22);
+  background: linear-gradient(90deg, rgba(110,208,22,1) 0%, rgba(251,38,107,1) 100%);
+}
+
+.e-anim-2-2011 {
+  background: rgb(251,38,107);
+  background: linear-gradient(90deg, rgba(251,38,107,1) 0%, rgba(22,144,208,1) 100%);
+}
+
+.e-anim-1-2012 {
+  background: rgb(251,156,38);
+  background: linear-gradient(90deg, rgba(251,156,38,1) 0%, rgba(7,115,153,1) 100%);
+}
+
+.e-anim-2-2012 {
+  background: rgb(7,115,153);
+  background: linear-gradient(90deg, rgba(7,115,153,1) 0%, rgba(184,38,251,1) 100%);
+}
+
+.e-anim-1-2013 {
+  background: rgb(152,153,7);
+  background: linear-gradient(90deg, rgba(152,153,7,1) 0%, rgba(135,242,241,1) 100%);
+}
+
+.e-anim-2-2013 {
+  background: rgb(135,242,241);
+  background: linear-gradient(90deg, rgba(135,242,241,1) 0%, rgba(134,7,153,1) 100%);
+}
+
+.e-anim-1-2014 {
+  background: rgb(135,144,242);
+  background: linear-gradient(90deg, rgba(135,144,242,1) 0%, rgba(31,159,44,1) 100%);
+}
+
+.e-anim-2-2014 {
+  background: rgb(31,159,44);
+  background: linear-gradient(90deg, rgba(31,159,44,1) 0%, rgba(135,144,242,1) 100%);
+}
+
+.e-anim-1-2015 {
+  background: rgb(60,214,42);
+  background: linear-gradient(90deg, rgba(60,214,42,1) 0%, rgba(234,242,135,1) 100%);
+}
+
+.e-anim-2-2015 {
+  background: rgb(234,242,135);
+  background: linear-gradient(90deg, rgba(234,242,135,1) 0%, rgba(214,42,42,1) 100%);
+}
+
+.e-anim-1-2016 {
+  background: rgb(214,42,210);
+  background: linear-gradient(90deg, rgba(214,42,210,1) 0%, rgba(242,135,135,1) 100%);
+}
+
+.e-anim-2-2016 {
+  background: rgb(242,135,135);
+  background: linear-gradient(90deg, rgba(242,135,135,1) 0%, rgba(60,214,42,1) 100%);
+}
+
+.e-anim-1-2017 {
+  background: rgb(135,242,172);
+  background: linear-gradient(90deg, rgba(135,242,172,1) 0%, rgba(56,42,214,1) 100%);
+}
+
+.e-anim-2-2017 {
+  background: rgb(56,42,214);
+  background: linear-gradient(90deg, rgba(56,42,214,1) 0%, rgba(242,241,135,1) 100%);
+}
+
 .e-anim-1-2018 {
   background: rgb(63,214,42);
   background: linear-gradient(90deg, rgba(63,214,42,1) 0%, rgba(135,242,172,1) 100%);
@@ -355,7 +485,7 @@ EDITIONS
 .edition-enter-animation-text {
   font-family: 'Montserrat', 'sans-serif';
   color: white;
-  font-size: 500px;
+  font-size: 20vw;
 }
 
 .edition-infos-container {

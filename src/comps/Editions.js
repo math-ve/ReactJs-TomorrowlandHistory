@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import {gsap, ScrollTrigger } from "gsap/all";
+import React, { useEffect, useState } from 'react';
 
 import TimeLine from './TimeLine';
 
 const Editions = (props) => {
 
-    const {data, timeline, scroll} = props;
+    const {data} = props;
     const [millenium, setMillenium] = useState("");
     const [year, setYear] = useState("");
 
@@ -59,7 +58,7 @@ const Editions = (props) => {
                             <img src={`/assets/${data.cover[5]}`} alt="tml-cover" className={`editions-images img-6 img-6-${data.year}`} />
                         </div>
                     </div>
-                    <TimeLine year={data.year} tl={timeline} scroll={scroll} />
+                    <TimeLine year={data.year} />
                 </div>
             </div>
             <div className={`edition-aftermovie-container edition-aftermovie-container-${data.year}`}>
