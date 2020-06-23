@@ -1,0 +1,584 @@
+/*
+BASIC CONFIG
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.height-value {
+  position: fixed;
+  z-index: 50;
+}
+
+
+/*HEADER-COVER*/
+
+.header-cover {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/amicorum-1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+}
+
+.header-shader {
+  width: 100%;
+  background-color: rgba(146, 144, 27, 0.274);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 75%;
+}
+
+.header-logo {
+  width: 40%;
+  padding: 30px 15px;
+  border-radius: 16px;
+  background-color: hsla(62, 93%, 16%, 0.714);
+  box-shadow: 0px 10px 10px black;
+}
+
+.howto-container {
+  height: 17vh;
+  width: 100%;
+  background: rgb(235,234,198);
+  background-color: #4c4f03de;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.howto-container h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+
+/*
+PINNING TRANSITION
+*/
+
+.transition-1-container {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background-color: powderblue;
+}
+
+.transition-1-item-1 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(76,79,3);
+  background: linear-gradient(180deg, rgba(76,79,3,1) 0%, rgba(172,179,1,1) 100%);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transition-1-item-2 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0,60,254);
+  background: linear-gradient(90deg, rgba(0,60,254,1) 0%, rgba(3,76,59,1) 82%, rgba(3,77,53,1) 100%);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transition-1-item-3 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(254,0,240);
+  background: linear-gradient(90deg, rgba(254,0,240,1) 0%, rgba(255,0,0,1) 100%);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition-1-text-1 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.transition-1-text-2 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.transition-1-text-3 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+/*
+ANNOUCEMENT
+*/
+
+.announcement-container {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+}
+
+.announcement-bg-container {
+  width: 100%;
+  background-image: url("/assets/amicorum-2.jpg");
+  background-position: bottom;
+  display: flex;
+}
+
+.announcement-shader {
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  display: flex;
+}
+
+.announcement-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 2s ease;
+}
+
+.announcement-text {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.a-anim-11 {
+  font-size: 70px;
+}
+
+.editions-start-anim-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-anim-12 {
+  width: 100%;
+  height: 50%;
+  background-image: url("/assets/arminvb.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 60px;
+  position: relative;
+}
+
+.a-anim-12-shader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 246, 10, 0.267);
+}
+
+.a-anim-13 {
+  width: 100%;
+  height: 50%;
+  background-image: url("/assets/martin-garrix.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 60px;
+  position: relative;
+  background-size: cover;
+  background-position: 0% 25%;
+}
+
+.a-anim-13-shader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 10, 10, 0.267);
+}
+
+.a-anim-14 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(91,91,91);
+  background: radial-gradient(circle, rgba(91,91,91,1) 0%, rgba(39,39,39,1) 34%, rgba(0,0,0,1) 100%);
+}
+
+/*
+EDITIONS
+*/
+
+.editions-main-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background: rgb(0,0,0);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edition-start-slow-animation-1 {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  margin-top: 20px;
+  overflow-x: visible;
+}
+
+.edition-start-slow-animation-2 {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  overflow-x: visible;
+}
+
+.slow-anim {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.editions-main-container h2 {
+  color: white;
+  font-size: 50px;
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 200;
+}
+
+.edition-container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+}
+
+.edition-enter-animation-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.e-anim-1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+}
+
+.e-anim-2 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(51,51,51);
+  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(65,0,134,1) 100%);
+}
+
+.e-anim-1-2018 {
+  background: rgb(63,214,42);
+  background: linear-gradient(90deg, rgba(63,214,42,1) 0%, rgba(135,242,172,1) 100%);
+}
+
+.e-anim-2-2018 {
+  background: rgb(135,242,172);
+  background: linear-gradient(90deg, rgba(135,242,172,1) 0%, rgba(160,42,214,1) 100%);
+}
+
+.e-anim-1-2019 {
+  background: rgb(6,175,182);
+  background: linear-gradient(90deg, rgba(6,175,182,1) 0%, rgba(188,218,219,1) 100%);
+}
+
+.e-anim-2-2019 {
+  background: rgb(188,218,219);
+  background: linear-gradient(90deg, rgba(188,218,219,1) 0%, rgba(182,6,63,1) 100%);
+}
+
+.edition-enter-animation-text {
+  font-family: 'Montserrat', 'sans-serif';
+  color: white;
+  font-size: 500px;
+}
+
+.edition-infos-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  display: flex;
+}
+
+.editions-infos-shader-container {
+  width: 100%;
+  background-color: hsla(184, 100%, 11%, 0.815);
+  display: flex;
+  flex-direction: column;
+}
+
+.editions-three-part-container {
+  width: 100%;
+  height: 89%;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: visible;
+}
+
+.editions-images {
+  width: 90%;
+  transition: all 1s ease;
+  pointer-events: all;
+}
+
+.editions-images:hover {
+  transform: scale(1.05);
+}
+
+.editions-left-part {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+}
+
+.editions-mid-part {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+}
+
+.editions-infos-text {
+  display: flex;
+  width: 550px;
+  height: 370px;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', 'sans-serif';
+  overflow: visible;
+}
+
+.editions-theme-container {
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 1.3vw;
+  overflow: visible;
+}
+
+hr {
+  width: 75%;
+  margin: auto;
+}
+
+.editions-date-text {
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.editions-visitors-text {
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.editions-right-part {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: visible;
+}
+
+.edition-infos-container-2005 {
+  background-position: center;
+}
+
+.edition-infos-container-2007 {
+  background-position: center;
+}
+
+.edition-infos-container-2017 {
+  background-position: bottom;
+}
+
+.edition-infos-container-2018 {
+  background-position: bottom;
+}
+
+.edition-aftermovie-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  display: flex;
+  overflow: hidden;
+}
+
+.aftermovie-bg-video {
+  position: absolute;
+  z-index: -1;
+}
+
+.aftermovie-text-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aftermovie-text {
+  color: white;
+  font-size: 3vw;
+}
+
+.aftermovie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aftermovie {
+  width: 80%;
+  height: 80%;
+  pointer-events: all;
+  border: none;
+}
+
+.e-anim-1-2005 {
+  background-color: yellowgreen;
+}
+.e-anim-1-2019 {
+  background-color: yellowgreen;
+}
+
+/*
+TINELINE
+*/
+
+.timeline-main-container {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.212);
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.timeline {
+  width: 99%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: visible;
+}
+
+.timeline-edition {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  overflow: visible;
+}
+
+.timeline-stop {
+  width: 3px;
+  height: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+.timeline-year {
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  padding-bottom: 5px;
+  pointer-events: all;
+  transition: all .25s ease;
+}
+.timeline-year:hover {
+  color: rgb(251, 18, 18);
+  transform: scale(2) translateY(-3px);
+}
+
+.timeline-active {
+  transform: scale(2) translateY(-3px);
+  color: rgb(255, 123, 0);
+}
