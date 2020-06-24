@@ -616,6 +616,7 @@ hr {
 .aftermovie-bg-video {
   position: absolute;
   z-index: -1;
+  height: 100%;
   width: 100%;
 }
 
@@ -661,6 +662,7 @@ TINELINE
 .timeline-main-container {
   width: 100%;
   height: 11%;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -708,6 +710,7 @@ TINELINE
   padding-bottom: 5px;
   pointer-events: all;
   transition: all .25s ease;
+  font-size: 1vw;
 }
 .timeline-year:hover {
   color: rgb(251, 18, 18);
@@ -717,6 +720,10 @@ TINELINE
 .timeline-active {
   transform: scale(2) translateY(-3px);
   color: rgb(255, 123, 0);
+}
+
+@media screen and (max-width: 1440px) {
+
 }
 
 
