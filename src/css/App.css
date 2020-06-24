@@ -565,7 +565,7 @@ EDITIONS
   height: 89%;
   display: flex;
   justify-content: space-around;
-  overflow-y: visible;
+  overflow-y: hidden;
 }
 
 .editions-images {
@@ -820,10 +820,6 @@ TINELINE
     font-size: 7.5vw;
   }
 
-  .editions-main-container h2 {
-    font-size: 4vw;
-  }
-
   .slow-anim {
     width: 5px;
     height: 5px;
@@ -835,5 +831,85 @@ TINELINE
 
   .edition-start-slow-animation-2 {
     margin-bottom: 7.5px;
+  }
+
+  .editions-three-part-container {
+    flex-direction: column;
+  }
+
+  .editions-mid-part {
+    order: 1;
+    width: 100%;
+    flex-basis: 230px;
+  }  
+
+  .editions-left-part {
+    order: 2;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .editions-right-part {
+    order: 3;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .editions-infos-text {
+    height: 65%;
+    padding-bottom: 10px;
+  }
+
+  .editions-images {
+    max-width: 46%;
+  }
+
+  .editions-main-container h2 {
+    font-size: 6vw;
+  }
+
+  hr {
+    width: 50%;
+  }
+
+  .editions-theme-text {
+    font-size: 4.5vw;
+  }
+
+  .editions-date-text {
+    font-size: 3vw;
+  }
+
+  .editions-visitors-text {
+    font-size: 3vw;
+  }
+
+  .timeline-main-container {
+    padding-top:30px;
+  }
+
+  .timeline-container {
+    height: 7.5px;
+  }
+
+  .timeline {
+    height: 1.5px;
+  }
+
+  .timeline-stop {
+    width: 1.5px;
+  }
+
+  .timeline-year {
+    font-size: 1.3vw;
+  }
+
+  .aftermovie-bg-video {
+    width: auto;
+  }
+
+  .aftermovie {
+    width: 95%;
+    height: 50%;
   }
 }
