@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
 import {gsap, ScrollTrigger } from "gsap/all";
 
@@ -721,8 +721,6 @@ const Home = (props) => {
         end: "+=250000",
         scrub: 1,
         pin: true,
-        //pinReparent: true
-        //anticipatePin: 1,
         snap: {
           snapTo: "labels",
           duration: {min: 0.2, max: 1},
