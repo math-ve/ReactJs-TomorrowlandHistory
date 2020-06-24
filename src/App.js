@@ -1,10 +1,6 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
 import {gsap, ScrollTrigger } from "gsap/all";
-import { Switch, Route } from 'react-router-dom';
 import api from './api/api';
-import Editions from './comps/Editions'
-
 import './css/App.css';
 import Home from './pages/Home';
 
@@ -29,7 +25,7 @@ const App = () => {
     )
   else
     return (
-      <div>LOADIIIIIIIING</div>
+      <div className="loading-home-container"></div>
     )
 }
 

@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
-
 import {gsap, ScrollTrigger } from "gsap/all";
-
 import Editions from '../comps/Editions';
+import LoadingHome from '../comps/LoadingHome';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = (props) => {
 
     const {editions} = props;
-
     const tl1 = gsap.timeline();
   
     //HEADER TEXT ANIMATION
@@ -110,7 +108,6 @@ const Home = (props) => {
         end: "+=30000",
         scrub: 1.5,
         pin: true,
-        //anticipatePin: 1,
         snap: {
           snapTo: "labels",
           duration: {min: 0.2, max: 1},
@@ -119,7 +116,6 @@ const Home = (props) => {
       })
     },[])
 
-  
     useEffect(() => {
       tl1.from('.edition-start-animation-text', {duration:10, opacity:0, filter:"blur(30px)"})
       .addLabel("part-1")
@@ -713,7 +709,6 @@ const Home = (props) => {
       .from('.aftermovie-container-2019', {duration:10, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
       .addLabel("aftermovie-15")
   
-          
       ScrollTrigger.create({
         animation: tl1,
         trigger: ".editions-main-container",
@@ -731,6 +726,7 @@ const Home = (props) => {
   
     return (
       <div className="main-app-container">
+        <LoadingHome />
         <div className="header-cover">
           <div className="header-shader">
             <div className="header-logo-container">
@@ -745,11 +741,9 @@ const Home = (props) => {
           <div className="transition-1-item-1">
             <p className="transition-1-text-1 tr-item-1">Yesterday is History,</p>
           </div>
-  
           <div className="transition-1-item-2">
             <p className="transition-1-text-2 tr-item-1">Today is a Gift,</p>
           </div>
-  
           <div className="transition-1-item-3">
             <p className="transition-1-text-3 tr-item-1">Tomorrow is Mystery...</p>
           </div>
@@ -809,7 +803,6 @@ const Home = (props) => {
           ))}
         </div>
       </div>
-  
     ); 
 }
 
