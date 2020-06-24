@@ -547,8 +547,8 @@ EDITIONS
 
 .editions-infos-text {
   display: flex;
-  width: 550px;
-  height: 370px;
+  width: 90%;
+  height: 50%;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;

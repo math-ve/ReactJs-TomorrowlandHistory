@@ -146,7 +146,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2005', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2005')
       .from('.timeline-container-2005', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2005 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2005 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2005') //FIN
       .from('.img-3-2005', {duration:10, opacity:0})
       .addLabel("img-3-2005")
@@ -184,7 +184,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2006', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2006')
       .from('.timeline-container-2006', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2006 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2006 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2006') //FIN
       .from('.img-3-2006', {duration:10, opacity:0})
       .addLabel("img-4-2006")
@@ -222,7 +222,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2007', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2007')
       .from('.timeline-container-2007', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2007 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2007 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2007') //FIN
       .from('.img-3-2007', {duration:10, opacity:0})
       .addLabel("img-3-2007")
@@ -260,7 +260,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2008', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2008')
       .from('.timeline-container-2008', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2008 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2008 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2008') //FIN
       .from('.img-3-2008', {duration:10, opacity:0})
       .addLabel("img-3-2008")
@@ -298,7 +298,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2009', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2009')
       .from('.timeline-container-2009', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2009 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2009 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2009') //FIN
       .from('.img-3-2009', {duration:10, opacity:0})
       .addLabel("img-3-2009")
@@ -336,7 +336,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2010', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2010')
       .from('.timeline-container-2010', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2010 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2010 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2010') //FIN
       .from('.img-3-2010', {duration:10, opacity:0})
       .addLabel("img-3-2010")
@@ -374,7 +374,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2011', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2011')
       .from('.timeline-container-2011', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2011 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2011 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2011') //FIN
       .from('.img-3-2011', {duration:10, opacity:0})
       .addLabel("img-3-2011")
@@ -412,7 +412,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2012', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2012')
       .from('.timeline-container-2012', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2012 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2012 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2012') //FIN
       .from('.img-3-2012', {duration:10, opacity:0})
       .addLabel("img-3-2012")
@@ -450,7 +450,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2013', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2013')
       .from('.timeline-container-2013', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2013 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2013 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2013') //FIN
       .from('.img-3-2013', {duration:10, opacity:0})
       .addLabel("img-3-2013")
@@ -488,7 +488,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2014', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2014')
       .from('.timeline-container-2014', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2014 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2014 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2014') //FIN
       .from('.img-3-2014', {duration:10, opacity:0})
       .addLabel("img-3-2014")
@@ -526,7 +526,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2015', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2015')
       .from('.timeline-container-2015', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2015 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2015 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2015') //FIN
       .from('.img-3-2015', {duration:10, opacity:0})
       .addLabel("img-3-2015")
@@ -564,7 +564,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2016', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2016')
       .from('.timeline-container-2016', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2016 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2016 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2016') //FIN
       .from('.img-3-2016', {duration:10, opacity:0})
       .addLabel("img-3-2016")
@@ -602,7 +602,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2017', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2017')
       .from('.timeline-container-2017', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2017 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2017 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2017') //FIN
       .from('.img-3-2017', {duration:10, opacity:0})
       .addLabel("img-3-2017")
@@ -640,7 +640,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2018', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2018')
       .from('.timeline-container-2018', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2018 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2018 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2018') //FIN
       .from('.img-3-2018', {duration:10, opacity:0})
       .addLabel("img-3-2018")
@@ -678,7 +678,7 @@ const Home = (props) => {
       .from('.editions-visitors-text-2019', {duration:10, transform:"scale(4)", color:"yellow", opacity:0, y:400, display:"none"})
       .addLabel('visitors-text-2019')
       .from('.timeline-container-2019', {duration:10, y:300, display:"none"}) //DEBUT
-      .from('.timeline-2019 div', {duration:10, y:300, stagger:1.5, display:"none"})
+      .from('.timeline-2019 div', {duration:10, y:300, stagger:1.5})
       .addLabel('timeline-2019') //FIN
       .from('.img-3-2019', {duration:10, opacity:0})
       .addLabel("img-3-2019")
