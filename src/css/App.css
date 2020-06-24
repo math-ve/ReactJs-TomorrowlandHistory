@@ -616,6 +616,7 @@ hr {
 .aftermovie-bg-video {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 
 .aftermovie-text-container{
