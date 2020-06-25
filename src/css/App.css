@@ -152,7 +152,7 @@ PINNING TRANSITION
 .transition-1-container {
   overflow: hidden;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   background-color: powderblue;
   width: 100%;
   top: 0;
@@ -160,7 +160,7 @@ PINNING TRANSITION
 
 .transition-1-item-1 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgb(76,79,3);
   background: linear-gradient(180deg, rgba(76,79,3,1) 0%, rgba(172,179,1,1) 100%);
   position: absolute;
@@ -171,7 +171,7 @@ PINNING TRANSITION
 }
 .transition-1-item-2 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgb(0,60,254);
   background: linear-gradient(90deg, rgba(0,60,254,1) 0%, rgba(3,76,59,1) 82%, rgba(3,77,53,1) 100%);
   position: absolute;
@@ -216,7 +216,7 @@ ANNOUCEMENT
 */
 
 .announcement-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: black;
   display: flex;
@@ -335,7 +335,7 @@ EDITIONS
 
 .editions-main-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   display: flex;
   background: rgb(0,0,0);
@@ -926,12 +926,12 @@ TRANSITION UL
     background-position: center;
   }
 
-  .edition-start-slow-animation-1 {
-    margin-top: 7.5px;
+  .edition-infos-container {
+    background-position: center;
   }
 
-  .edition-start-slow-animation-2 {
-    margin-bottom: 7.5px;
+  .edition-infos-container-2008 {
+    background-position: right;
   }
 
   .editions-three-part-container {
