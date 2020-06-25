@@ -7,7 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "faunadb": "^2.14.2",
-    "gsap": "^3.3.3",
+    "gsap": "^3.3.4",
     "http-proxy-middleware": "^1.0.4",
     "netlify-lambda": "^1.6.3",
     "react": "^16.13.1",

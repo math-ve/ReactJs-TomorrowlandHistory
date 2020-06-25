@@ -6,7 +6,7 @@ BASIC CONFIG
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
@@ -118,7 +118,7 @@ LOADING HOME
   background-color: #4c4f03de;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
 }
@@ -127,7 +127,13 @@ LOADING HOME
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 1.7vw;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
+}
+.howto-container h2 {
+  color: rgb(255, 255, 255);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.15vw;
 }
 
 
@@ -137,9 +143,11 @@ PINNING TRANSITION
 
 .transition-1-container {
   overflow: hidden;
-  position: relative;
+  position: absolute;
   height: 100vh;
   background-color: powderblue;
+  width: 100%;
+  top: 0;
 }
 
 .transition-1-item-1 {
@@ -204,6 +212,8 @@ ANNOUCEMENT
   width: 100%;
   background-color: black;
   display: flex;
+  position: absolute;
+  top: 0;
 }
 
 .announcement-bg-container {
@@ -317,12 +327,13 @@ EDITIONS
 .editions-main-container {
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: absolute;
   display: flex;
   background: rgb(0,0,0);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 0;
 }
 
 .edition-start-slow-animation-1 {
@@ -762,6 +773,7 @@ TINELINE
   pointer-events: all;
   transition: all .25s ease;
   font-size: 1vw;
+  cursor: pointer;
 }
 .timeline-year:hover {
   color: rgb(251, 18, 18);
@@ -771,6 +783,33 @@ TINELINE
 .timeline-active {
   transform: scale(2) translateY(-3px);
   color: rgb(255, 123, 0);
+}
+
+
+/*
+TRANSITION UL
+*/
+
+.ul-transition{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+}
+.ul-transition li {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  transform-origin: top;
+  transform: scaleY(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 3vw;
 }
 
 @media screen and (max-width: 1440px) {
@@ -796,6 +835,9 @@ TINELINE
     font-size: 4vw;
     text-align: center;
     padding: 0 10px;
+  }
+  .howto-container h2 {
+  display: none;
   }
 
   .transition-1-text-1 {

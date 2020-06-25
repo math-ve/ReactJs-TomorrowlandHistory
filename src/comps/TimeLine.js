@@ -2,7 +2,8 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 
 const TimeLine = (props) => {
 
-    const { year } = props;
+
+    const { year, handleClick } = props;
 
     if (year === "2005")
         return (
@@ -17,85 +18,85 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
-                        <div className="timeline-edition timeline-edition-2017">
+                        <div className="timeline-edition timeline-edition-2017nnnnnnnn">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -110,7 +111,7 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2006">
                         <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
@@ -122,79 +123,79 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -209,13 +210,13 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2007">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
@@ -227,73 +228,73 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -308,19 +309,19 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2008">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
@@ -332,67 +333,67 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -407,25 +408,25 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2009">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
@@ -437,61 +438,61 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -506,31 +507,31 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2010">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
@@ -542,55 +543,55 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -605,37 +606,37 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2011">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
@@ -647,49 +648,49 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -704,43 +705,43 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2012">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
@@ -752,43 +753,43 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -803,49 +804,49 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2013">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
@@ -857,37 +858,37 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -902,55 +903,55 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2014">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
@@ -962,31 +963,31 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -1001,61 +1002,61 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2015">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
@@ -1067,25 +1068,25 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -1100,67 +1101,67 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2016">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
@@ -1172,19 +1173,19 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -1199,73 +1200,73 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2017">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
@@ -1277,13 +1278,13 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -1298,79 +1299,79 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2018">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
@@ -1382,7 +1383,7 @@ const TimeLine = (props) => {
                         </div>
                         <div className="timeline-edition timeline-edition-2019">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2019">
+                            <div className="timeline-year timeline-year-2019" onClick={() => handleClick('2019')}>
                                 2019
                             </div>
                         </div>
@@ -1397,85 +1398,85 @@ const TimeLine = (props) => {
                     <div className="timeline timeline-2019">
                     <div className="timeline-edition timeline-edition-2005">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2005">
+                            <div className="timeline-year timeline-year-2005" onClick={() => handleClick('2005')}>
                                 2005
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2006">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2006">
+                            <div className="timeline-year timeline-year-2006" onClick={() => handleClick('2006')}>
                                 2006
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2007">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2007">
+                            <div className="timeline-year timeline-year-2007" onClick={() => handleClick('2007')}>
                                 2007
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2008">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2008">
+                            <div className="timeline-year timeline-year-2008" onClick={() => handleClick('2008')}>
                                 2008
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2009">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2009">
+                            <div className="timeline-year timeline-year-2009" onClick={() => handleClick('2009')}>
                                 2009
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2010">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2010">
+                            <div className="timeline-year timeline-year-2010" onClick={() => handleClick('2010')}>
                                 2010
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2011">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2011">
+                            <div className="timeline-year timeline-year-2011" onClick={() => handleClick('2011')}>
                                 2011
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2012">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2012">
+                            <div className="timeline-year timeline-year-2012" onClick={() => handleClick('2012')}>
                                 2012
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2013">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2013">
+                            <div className="timeline-year timeline-year-2013" onClick={() => handleClick('2013')}>
                                 2013
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2014">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2014">
+                            <div className="timeline-year timeline-year-2014" onClick={() => handleClick('2014')}>
                                 2014
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2015">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2015">
+                            <div className="timeline-year timeline-year-2015" onClick={() => handleClick('2015')}>
                                 2015
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2016">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2016">
+                            <div className="timeline-year timeline-year-2016" onClick={() => handleClick('2016')}>
                                 2016
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2017">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2017">
+                            <div className="timeline-year timeline-year-2017" onClick={() => handleClick('2017')}>
                                 2017
                             </div>
                         </div>
                         <div className="timeline-edition timeline-edition-2018">
                             <div className="timeline-stop"></div>
-                            <div className="timeline-year timeline-year-2018">
+                            <div className="timeline-year timeline-year-2018" onClick={() => handleClick('2018')}>
                                 2018
                             </div>
                         </div>
