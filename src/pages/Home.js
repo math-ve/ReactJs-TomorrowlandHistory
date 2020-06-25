@@ -27,9 +27,7 @@ const Home = (props) => {
     const handleClick = (yearTo) => {
       gsap.to('.ul-transition li', {duration:.5, transform:"scaleY(1)", stagger:.1, onComplete: () => {
         tl.seek(`timeline-${yearTo}`);
-        gsap.to('.ul-transition li', {transformOrigin:"bottom", duration:.5, transform:"scaleY(0)", stagger:.1, onComplete:() => {
-          gsap.to('.ul-transition li', {transformOrigin:"top"});
-        }})
+        gsap.to('.ul-transition li', {duration:.5, transform:"scaleY(0)", stagger:.1,})
       }})
     }
     
@@ -48,15 +46,6 @@ const Home = (props) => {
     //LIVE TODAY ANIMATIONS
     useEffect(() => {
       tl.addLabel('start')
-        .from('.transition-1-container', {duration:.5, yPercent:100})
-        .from(".transition-1-text-1", {filter:"blur(40px)", y: 300, duration:.5}, "-=.2")
-        .addLabel("part--1")
-        .from(".transition-1-item-2", {duration:.5, xPercent: 100})
-        .from(".transition-1-text-2", {filter:"blur(40px)", x: 300, duration:.5}, "-=.2")
-        .addLabel("part--2")
-        .from(".transition-1-item-3", {duration:.5, xPercent: -100})
-        .from(".transition-1-text-3", {filter:"blur(40px)", x: -300, duration:.5}, "-=.2")
-        .addLabel("part--3")
         //PART22222222222
         .from('.announcement-container', {duration:.5, yPercent:100})
         .from(".announcement-bg-container", {duration: 1, opacity: 0}, "-=.3")
@@ -107,22 +96,21 @@ const Home = (props) => {
         .from(".a-anim-12", {duration:.5, xPercent:100, opacity:0})
         .from(".a-anim-13", {duration:.5, xPercent:-100, opacity:0})
         .addLabel('a-nim-13.5')
-        .from(".a-anim-14", {duration:.5, yPercent:-100})
-        .addLabel("part-13")
+        //.from(".a-anim-14", {duration:.5, yPercent:-100})
         //PART 333333333
         .from('.editions-main-container', {duration:.5, yPercent:100})
         //2005
         .from('.edition-enter-animation-container-2005', {display:"none"})
-        .from('.e-anim-1-2005', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2005', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2005', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2005', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2005, .e-anim-2-2005', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2005, .e-anim-2-text-2005', {duration:.5, opacity:0, display:"none"})
         .from('.edition-infos-container-2005', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2005', {duration:.3, opacity:0, transform:"scale(4)", y:400})
         .from('.editions-theme-text-2005', {duration:.3, opacity:0, transform:"scale(4)", y:400}, "-=.15")
         .from('.hr-top-2005, .hr-bottom-2005', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2005', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2005', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2005, .i-anim-bottom-2005', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2005, .i-anim-left-2005', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2005', {duration:.3, y:300, display:"none"})
         .from('.timeline-2005 div', {duration:.3, y:300, stagger:.03})
         .addLabel('timeline-2005')
@@ -139,10 +127,8 @@ const Home = (props) => {
         .addLabel("aftermovie-1")
         //2006
         .from('.edition-enter-animation-container-2006', {display:"none"})
-        .from('.e-anim-1-2006', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2006', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2006', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2006', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2006, .e-anim-2-2006', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2006, .e-anim-2-text-2006', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2005', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2006', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2006', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -150,6 +136,8 @@ const Home = (props) => {
         .from('.hr-top-2006, .hr-bottom-2006', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2006', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2006', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2006, .i-anim-bottom-2006', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2006, .i-anim-left-2006', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2006', {duration:.3, y:300, display:"none"})
         .from('.timeline-2006 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2006')
@@ -166,10 +154,8 @@ const Home = (props) => {
         .addLabel("aftermovie-2")
         //2007
         .from('.edition-enter-animation-container-2007', {display:"none"})
-        .from('.e-anim-1-2007', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2007', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2007', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2007', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2007, .e-anim-2-2007', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2007, .e-anim-2-text-2007', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2006', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2007', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2007', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -177,6 +163,8 @@ const Home = (props) => {
         .from('.hr-top-2007, .hr-bottom-2007', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2007', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2007', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2007, .i-anim-bottom-2007', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2007, .i-anim-left-2007', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2007', {duration:.3, y:300, display:"none"})
         .from('.timeline-2007 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2007')
@@ -193,10 +181,8 @@ const Home = (props) => {
         .addLabel("aftermovie-3")
         //2008
         .from('.edition-enter-animation-container-2008', {display:"none"})
-        .from('.e-anim-1-2008', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2008', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2008', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2008', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2008, .e-anim-2-2008', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2008, .e-anim-2-text-2008', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2007', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2008', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2008', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -204,6 +190,8 @@ const Home = (props) => {
         .from('.hr-top-2008, .hr-bottom-2008', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2008', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2008', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2008, .i-anim-bottom-2008', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2008, .i-anim-left-2008', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2008', {duration:.3, y:300, display:"none"})
         .from('.timeline-2008 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2008')
@@ -220,10 +208,8 @@ const Home = (props) => {
         .addLabel("aftermovie-4")
         //2009
         .from('.edition-enter-animation-container-2009', {display:"none"})
-        .from('.e-anim-1-2009', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2009', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2009', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2009', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2009, .e-anim-2-2009', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2009, .e-anim-2-text-2009', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2008', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2009', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2009', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -231,6 +217,8 @@ const Home = (props) => {
         .from('.hr-top-2009, .hr-bottom-2009', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2009', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2009', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2009, .i-anim-bottom-2009', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2009, .i-anim-left-2009', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2009', {duration:.3, y:300, display:"none"})
         .from('.timeline-2009 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2009')
@@ -247,10 +235,8 @@ const Home = (props) => {
         .addLabel("aftermovie-5")
         //2010
         .from('.edition-enter-animation-container-2010', {display:"none", display:"none"})
-        .from('.e-anim-1-2010', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2010', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2010', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2010', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2010, .e-anim-2-2010', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2010, .e-anim-2-text-2010', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2009', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2010', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2010', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -258,6 +244,8 @@ const Home = (props) => {
         .from('.hr-top-2010, .hr-bottom-2010', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2010', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2010', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2010, .i-anim-bottom-2010', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2010, .i-anim-left-2010', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2010', {duration:.3, y:300, display:"none"})
         .from('.timeline-2010 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2010')
@@ -274,10 +262,8 @@ const Home = (props) => {
         .addLabel("aftermovie-6")
         //2011
         .from('.edition-enter-animation-container-2011', {display:"none"})
-        .from('.e-anim-1-2011', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2011', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2011', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2011', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2011, .e-anim-2-2011', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2011, .e-anim-2-text-2011', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2010', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2011', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2011', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -285,6 +271,8 @@ const Home = (props) => {
         .from('.hr-top-2011, .hr-bottom-2011', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2011', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2011', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2011, .i-anim-bottom-2011', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2011, .i-anim-left-2011', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2011', {duration:.3, y:300, display:"none"})
         .from('.timeline-2011 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2011')
@@ -301,10 +289,8 @@ const Home = (props) => {
         .addLabel("aftermovie-7")
         //2012
         .from('.edition-enter-animation-container-2012', {display:"none"})
-        .from('.e-anim-1-2012', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2012', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2012', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2012', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2012, .e-anim-2-2012', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2012, .e-anim-2-text-2012', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2011', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2012', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2012', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -312,6 +298,8 @@ const Home = (props) => {
         .from('.hr-top-2012, .hr-bottom-2012', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2012', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2012', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2012, .i-anim-bottom-2012', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2012, .i-anim-left-2012', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2012', {duration:.3, y:300, display:"none"})
         .from('.timeline-2012 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2012')
@@ -328,10 +316,8 @@ const Home = (props) => {
         .addLabel("aftermovie-8")
         //2013
         .from('.edition-enter-animation-container-2013', {display:"none"})
-        .from('.e-anim-1-2013', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2013', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2013', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2013', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2013, .e-anim-2-2013', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2013, .e-anim-2-text-2013', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2012', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2013', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2013', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -339,6 +325,8 @@ const Home = (props) => {
         .from('.hr-top-2013, .hr-bottom-2013', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2013', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2013', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2013, .i-anim-bottom-2013', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2013, .i-anim-left-2013', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2013', {duration:.3, y:300, display:"none"})
         .from('.timeline-2013 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2013')
@@ -355,10 +343,8 @@ const Home = (props) => {
         .addLabel("aftermovie-9")
         //2014
         .from('.edition-enter-animation-container-2014', {display:"none"})
-        .from('.e-anim-1-2014', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2014', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2014', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2014', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2014, .e-anim-2-2014', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2014, .e-anim-2-text-2014', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2013', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2014', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2014', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -366,6 +352,8 @@ const Home = (props) => {
         .from('.hr-top-2014, .hr-bottom-2014', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2014', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2014', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2014, .i-anim-bottom-2014', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2014, .i-anim-left-2014', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2014', {duration:.3, y:300, display:"none"})
         .from('.timeline-2014 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2014')
@@ -382,10 +370,8 @@ const Home = (props) => {
         .addLabel("aftermovie-10")
         //2015
         .from('.edition-enter-animation-container-2015', {display:"none"})
-        .from('.e-anim-1-2015', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2015', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2015', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2015', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2015, .e-anim-2-2015', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2015, .e-anim-2-text-2015', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2014', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2015', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2015', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -393,6 +379,8 @@ const Home = (props) => {
         .from('.hr-top-2015, .hr-bottom-2015', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2015', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2015', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2015, .i-anim-bottom-2015', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2015, .i-anim-left-2015', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2015', {duration:.3, y:300, display:"none"})
         .from('.timeline-2015 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2015')
@@ -409,10 +397,8 @@ const Home = (props) => {
         .addLabel("aftermovie-11")
         //2016
         .from('.edition-enter-animation-container-2016', {display:"none"})
-        .from('.e-anim-1-2016', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2016', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2016', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2016', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2016, .e-anim-2-2016', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2016, .e-anim-2-text-2016', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2015', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2016', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2016', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -420,6 +406,8 @@ const Home = (props) => {
         .from('.hr-top-2016, .hr-bottom-2016', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2016', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2016', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2016, .i-anim-bottom-2016', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2016, .i-anim-left-2016', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2016', {duration:.3, y:300, display:"none"})
         .from('.timeline-2016 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2016')
@@ -436,10 +424,8 @@ const Home = (props) => {
         .addLabel("aftermovie-12")
         //2017
         .from('.edition-enter-animation-container-2017', {display:"none"})
-        .from('.e-anim-1-2017', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2017', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2017', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2017', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2017, .e-anim-2-2017', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2017, .e-anim-2-text-2017', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2016', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2017', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2017', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -447,6 +433,8 @@ const Home = (props) => {
         .from('.hr-top-2017, .hr-bottom-2017', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2017', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2017', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2017, .i-anim-bottom-2017', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2017, .i-anim-left-2017', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2017', {duration:.3, y:300, display:"none"})
         .from('.timeline-2017 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2017')
@@ -463,10 +451,8 @@ const Home = (props) => {
         .addLabel("aftermovie-13")
         //2018
         .from('.edition-enter-animation-container-2018', {display:"none"})
-        .from('.e-anim-1-2018', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2018', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2018', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2018', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2018, .e-anim-2-2018', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2018, .e-anim-2-text-2018', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2017', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2018', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2018', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -474,6 +460,8 @@ const Home = (props) => {
         .from('.hr-top-2018, .hr-bottom-2018', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2018', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2018', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2018, .i-anim-bottom-2018', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2018, .i-anim-left-2018', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2018', {duration:.3, y:300, display:"none"})
         .from('.timeline-2018 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2018')
@@ -490,10 +478,8 @@ const Home = (props) => {
         .addLabel("aftermovie-14")
         //2019
         .from('.edition-enter-animation-container-2019', {display:"none"})
-        .from('.e-anim-1-2019', {duration:.4, yPercent:100, opacity:0, display:"none"})
-        .from('.e-anim-1-text-2019', {duration:.5, opacity:0,  y:-200, display:"none"}, "-=.4")
-        .from('.e-anim-2-2019', {duration:.4, yPercent:-100, opacity:0, display:"none"})
-        .from('.e-anim-2-text-2019', {duration:.5, opacity:0, y:200, display:"none"}, "-=.4")
+        .from('.e-anim-1-2019, .e-anim-2-2019', {duration:.4, transform:"scaleY(0)", opacity:0, display:"none"})
+        .from('.e-anim-1-text-2019, .e-anim-2-text-2019', {duration:.5, opacity:0, display:"none"})
         .fromTo('.edition-aftermovie-container-2018', {display:"flex"}, {display:"none"})
         .from('.edition-infos-container-2019', {duration:.5, xPercent:100, display:"none"})
         .from('.editions-year-text-2019', {duration:.3, opacity:0, transform:"scale(4)", y:400})
@@ -501,6 +487,8 @@ const Home = (props) => {
         .from('.hr-top-2019, .hr-bottom-2019', {duration:.2, transform:"scaleX(0)", stagger:.2}, "-=.15")
         .from('.editions-date-text-2019', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.25")
         .from('.editions-visitors-text-2019', {duration:.3, transform:"scale(4)", opacity:0, y:400}, "-=.15")
+        .from('.i-anim-top-2019, .i-anim-bottom-2019', {duration:.3, transform:"scaleX(0)"})
+        .from('.i-anim-right-2019, .i-anim-left-2019', {duration:.3, transform:"scaleY(0)"})
         .from('.timeline-container-2019', {duration:.3, y:300, display:"none"})
         .from('.timeline-2019 div', {duration:.3, y:300, stagger:0.03})
         .addLabel('timeline-2019')
@@ -534,17 +522,6 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="transition-1-container">
-          <div className="transition-1-item-1">
-            <p className="transition-1-text-1 tr-item-1">Yesterday is History,</p>
-          </div>
-          <div className="transition-1-item-2">
-            <p className="transition-1-text-2 tr-item-1">Today is a Gift,</p>
-          </div>
-          <div className="transition-1-item-3">
-            <p className="transition-1-text-3 tr-item-1">Tomorrow is Mystery...</p>
-          </div>
-        </div>
         <div className="announcement-container">
           <div className="announcement-bg-container">
             <div className="announcement-shader">
@@ -570,12 +547,12 @@ const Home = (props) => {
                     <div className="a-anim-13-shader"></div>
                 </div>
             </div>
-            <div className="a-anim-14">
-              <img src="/assets/tml-logo-pink-2.png" alt="tml-logo" />
-            </div>
           </div>
         </div>
         <div className="editions-main-container">
+          <div className="a-anim-14">
+            <img src="/assets/tml-logo-pink-2.png" alt="tml-logo" />
+          </div>
           {editions.map((edition) => (
             <Editions data={edition.data} key={edition.data.year} handleClick={handleClick}/>
           ))}

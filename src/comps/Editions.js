@@ -42,6 +42,8 @@ const Editions = (props) => {
                         </div>
                         <div className={`editions-mid-part editions-mid-part-${data.year}`}>
                             <div className={`editions-infos-text editions-infos-text-${data.year}`}>
+                                <div className={`i-anim i-anim-top i-anim-top-${data.year}`}></div>
+                                <div className={`i-anim i-anim-right i-anim-right-${data.year}`}></div>
                                 <h2 className={`editions-year-text editions-year-text-${data.year}`}>{data.year}</h2>
                                 <div className="editions-theme-container">
                                     <hr className={`hr-top-${data.year}`} />
@@ -50,6 +52,8 @@ const Editions = (props) => {
                                 </div>
                                 <h3 className={`editions-date-text editions-date-text-${data.year}`}>{data.date}</h3>
                                 <h3 className={`editions-visitors-text editions-visitors-text-${data.year}`}>{data.visitors} visitors</h3>
+                                <div className={`i-anim i-anim-bottom i-anim-bottom-${data.year}`}></div>
+                                <div className={`i-anim i-anim-left i-anim-left-${data.year}`}></div>
                             </div>
                             <img src={`/assets/${data.cover[3]}`} alt="tml-cover" className={`editions-images img-4 img-4-${data.year}`} />
                         </div>
