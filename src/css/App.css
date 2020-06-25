@@ -136,6 +136,14 @@ LOADING HOME
   font-size: 1.15vw;
 }
 
+.mobile-h1 {
+  display: none;
+}
+
+.mobile-h2 {
+  display: none;
+}
+
 
 /*
 PINNING TRANSITION
@@ -813,6 +821,10 @@ TRANSITION UL
   font-size: 3vw;
 }
 
+.pgone-buttons-container {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
 
 }
@@ -824,12 +836,39 @@ TRANSITION UL
     width: 50%;
   }
 
+  .phone-buttons-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .phone-right-button {
+    width: 20%;
+    height: 65%;
+    border-radius: 30px 0 0 30px;
+    pointer-events: all;
+  }
+
+  .phone-left-button {
+    width: 20%;
+    height: 65%;
+    border-radius: 0 30px 30px 0;
+    pointer-events: all;
+  }
+
   .header-logo {
     width: 80%;
   }
 
   .howto-container {
-    height: 13vh;
+    height: 15vh;
+    justify-content: space-evenly;
   }
 
   .howto-container h1 {
@@ -837,9 +876,29 @@ TRANSITION UL
     text-align: center;
     padding: 0 10px;
   }
-  .howto-container h2 {
-  display: none;
+
+  .desktop-h1 {
+    display: none;
   }
+
+  .desktop-h2 {
+    display: none;
+  }
+
+  .mobile-h1 {
+    display: block;
+  }
+
+  .mobile-h2 {
+    display: block;
+  }
+
+  .howto-container h2 {
+    font-size: 10px;
+    text-align: center;
+    max-width: 90%;
+  }
+
 
   .transition-1-text-1 {
     font-size: 4vw;
@@ -863,9 +922,8 @@ TRANSITION UL
     font-size: 7.5vw;
   }
 
-  .slow-anim {
-    width: 5px;
-    height: 5px;
+  .a-anim-13 {
+    background-position: center;
   }
 
   .edition-start-slow-animation-1 {

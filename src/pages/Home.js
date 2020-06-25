@@ -3,6 +3,7 @@ import {gsap, ScrollTrigger } from "gsap/all";
 import Editions from '../comps/Editions';
 import LoadingHome from '../comps/LoadingHome';
 import TransitionUi from '../comps/TransitionUl';
+import PhoneButtons from '../comps/PhoneButtons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,12 +15,13 @@ const Home = (props) => {
 
     const logKey = (e) => {
       const current = tl.currentLabel();
+      console.log(e);
       if(e.code === "KeyN")
       {
         tl.tweenTo(tl.nextLabel());  
       }
       else if(e.code === "KeyP" && current !== "start")
-        tl.tweenTo( tl.previousLabel() );
+        tl.tweenTo( tl.previousLabel() );        
     }
 
     const handleClick = (yearTo) => {
@@ -518,14 +520,17 @@ const Home = (props) => {
     return (
       <div className="main-app-container">
         <LoadingHome />
+        <PhoneButtons handleClick={logKey}/>
         <div className="header-cover">
           <div className="header-shader">
             <div className="header-logo-container">
               <img src="/assets/tml-logo-pink-2.png" className="header-logo" alt="tml-logo" />
             </div>
             <div className="howto-container">
-              <h1>Relieve the amazing story of the greatest festival on earth only by pressing a key</h1>
-              <h2>Press 'N' to go further and press 'P' to go back</h2>
+              <h1 className="desktop-h1">Relieve the amazing story of the greatest festival on earth only by pressing a key</h1>
+              <h1 className="mobile-h1">Relieve the amazing story of the greatest festival on earth only touching your phone</h1>
+              <h2 className="desktop-h2">Press 'N' to go further and press 'P' to go back</h2>
+              <h2 className="mobile-h2">Press on the right side of the screen to go further and on the left side to go back</h2>
             </div>
           </div>
         </div>
