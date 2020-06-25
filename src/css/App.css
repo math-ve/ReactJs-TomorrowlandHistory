@@ -339,7 +339,6 @@ EDITIONS
 
 .editions-main-container {
   width: 100%;
-  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: absolute;
   display: flex;
@@ -996,6 +995,7 @@ TRANSITION UL
 
   .timeline-container {
     height: 7.5px;
+    width: 93%;
   }
 
   .timeline {
@@ -1007,7 +1007,7 @@ TRANSITION UL
   }
 
   .timeline-year {
-    font-size: 1.3vw;
+    font-size: 1.8vw;
   }
 
   .aftermovie-bg-video {
