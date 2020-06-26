@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import TimeLine from './TimeLine';
+import gsap from 'gsap/gsap-core';
 
 const Editions = (props) => {
 
@@ -23,6 +24,19 @@ const Editions = (props) => {
         setYear(yearStr);
     }, [data.year])
 
+    const handleImgClick = (e) => {
+        const targetSrc = e.target.src;
+        gsap.set('.img-preview', {attr:{src:targetSrc}, onComplete: () => {
+            gsap.to('.img-preview-container', {duration:.5, opacity:1})            
+        }})
+        gsap.to('.close-logo', {pointerEvents:'all'});
+    }
+
+    const handleLeavePreview = () => {
+        gsap.to('.img-preview-container', {duration:.5, opacity:0});
+        gsap.to('.close-logo', {pointerEvents:"none"});
+    }
+
     return (
         <div className={`edition-container edition-container-${data.year}`}>
             <div className={`edition-enter-animation-container edition-enter-animation-container-${data.year}`}>
@@ -38,10 +52,10 @@ const Editions = (props) => {
                     <div className={`editions-three-part-container editions-three-part-container-${data.year}`}>
                         <div className={`editions-left-part editions-left-part-${data.year}`}>
                             <div className={`img-container img-2-container img-2-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[1]}`} alt="tml-cover" className={`editions-images img-2 img-2-${data.year}`} />
+                                <img src={`/assets/${data.cover[1]}`} alt="tml-cover" className={`editions-images img-2 img-2-${data.year}`}  onClick={handleImgClick}/>
                             </div>
                             <div className={`img-container img-3-container img-3-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[2]}`} alt="tml-cover" className={`editions-images img-3 img-3-${data.year}`} />
+                                <img src={`/assets/${data.cover[2]}`} alt="tml-cover" className={`editions-images img-3 img-3-${data.year}`}  onClick={handleImgClick}/>
                             </div>
                         </div>
                         <div className={`editions-mid-part editions-mid-part-${data.year}`}>
@@ -63,20 +77,24 @@ const Editions = (props) => {
                             </div>
                             
                             <div className={`img-container img-4-container img-4-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[3]}`} alt="tml-cover" className={`editions-images img-4 img-4-${data.year}`} />
+                                <img src={`/assets/${data.cover[3]}`} alt="tml-cover" className={`editions-images img-4 img-4-${data.year}`}  onClick={handleImgClick}/>
                             </div>
                         </div>
                         <div className={`editions-right-part editions-right-part-${data.year}`}>
                             <div className={`img-container img-5-container img-5-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[4]}`} alt="tml-cover" className={`editions-images img-5 img-5-${data.year}`} />
+                                <img src={`/assets/${data.cover[4]}`} alt="tml-cover" className={`editions-images img-5 img-5-${data.year}`}  onClick={handleImgClick}/>
                             </div>
                             <div className={`img-container img-6-container img-6-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[5]}`} alt="tml-cover" className={`editions-images img-6 img-6-${data.year}`} />
+                                <img src={`/assets/${data.cover[5]}`} alt="tml-cover" className={`editions-images img-6 img-6-${data.year}`} onClick={handleImgClick}/>
                             </div>
                         </div>
                     </div>
                     <TimeLine year={data.year} handleClick={handleClick}/>
                 </div>
+                <div className={`img-preview-container img-preview-${data.year}`}>
+                    <img src="/assets/close.svg" className="close-logo" alt="close-logo" onClick={handleLeavePreview}/>
+                    <img src="" alt="tml-preview" className="img-preview"></img>
+                </div>                
             </div>
             <div className={`edition-aftermovie-container edition-aftermovie-container-${data.year}`}>
                 <div className="aftermovie-text-container">
@@ -89,6 +107,7 @@ const Editions = (props) => {
                     <iframe title={`aftermovie-${data.year}`} className={`aftermovie aftermovie-${data.year}`} src={`https://www.youtube.com/embed/${data.aftermovie}`} allowFullScreen></iframe>
                 </div>
             </div>
+
         </div>
     )
 
