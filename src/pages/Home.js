@@ -127,7 +127,7 @@ const Home = (props) => {
         .from('.img-5-container-2005', {duration:.5, opacity:0})
         .addLabel("img-5-2005")
         .from('.edition-aftermovie-container-2005', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2005', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2005', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2005', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2005', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-1")
