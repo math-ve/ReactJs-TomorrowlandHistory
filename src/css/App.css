@@ -1101,6 +1101,11 @@ TRANSITION UL
     transition: all .5 ease;
   }
 
+  .img-preview {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
   .editions-main-container h2 {
     font-size: 6vw;
   }
