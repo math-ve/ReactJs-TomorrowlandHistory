@@ -50,7 +50,7 @@ LOADING HOME
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40%;
+  height: 30%;
 }
 
 .loading-tml-logo {
@@ -265,7 +265,7 @@ ANNOUCEMENT
 }
 
 .a-anim-11 {
-  font-size: 70px;
+  font-size: 4vw;
 }
 
 .editions-start-anim-container {
@@ -908,8 +908,77 @@ TRANSITION UL
   display: none;
 }
 
-@media screen and (max-width: 1440px) {
+.thanks-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url('/assets/elixir.jpg');
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  overflow: visible;
+}
 
+.thanks-shader {
+  width: 100%;
+  background-color: rgba(35, 1, 36, 0.685);
+  display: flex;
+  align-items: center;
+}
+
+.thanks-text-container h1 {
+  font-size: 3vw;
+}
+.thanks-text-container h2 {
+  font-size: 2vw;
+}
+
+.thanks-link-container {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: visible;
+}
+
+.thanks-text-container p {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.thanks-text-container {
+  width: 100%;
+  display: flex;
+  height: 35%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Raleway', 'sans-serif';
+  overflow: visible;
+}
+
+
+a {
+  color: rgb(255, 0, 212);
+}
+
+@media screen and (min-width: 2600px) {
+
+  .loading-tml-logo {
+    width: 50%;
+  }
+
+  .loader-home-container {
+    height: 35px;
+    border: 5px solid black;
+  }
+
+  .loading-home-text {
+    font-size: 1vw;
+  }
 }
 
 
@@ -917,6 +986,10 @@ TRANSITION UL
 
   .loader-home-container {
     width: 50%;
+  }
+
+  .loading-home-logo-container {
+    height: auto;
   }
 
   .phone-buttons-container {
@@ -1162,5 +1235,35 @@ TRANSITION UL
   .aftermovie {
     width: 95%;
     height: 50%;
+  }
+
+  .thanks-text-container h1 {
+    font-size: 6.5vw;
+  }
+  .thanks-text-container h2 {
+    font-size: 4.5vw;
+  }
+  
+  .thanks-link-container {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .thanks-text-container p {
+    font-size: 2.5vw;
+    text-align: center;
+  }
+  
+  .thanks-text-container {
+    width: 100%;
+    display: flex;
+    height: 35%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
   }
 }

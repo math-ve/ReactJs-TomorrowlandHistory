@@ -154,7 +154,7 @@ const Home = (props) => {
         .from('.img-5-container-2006', {duration:.5, opacity:0})
         .addLabel("img-5-2006")
         .from('.edition-aftermovie-container-2006', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2006', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2006', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2006', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2006', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-2")
@@ -181,7 +181,7 @@ const Home = (props) => {
         .from('.img-5-container-2007', {duration:.5, opacity:0})
         .addLabel("img-5-2007")
         .from('.edition-aftermovie-container-2007', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2007', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2007', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2007', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2007', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-3")
@@ -208,7 +208,7 @@ const Home = (props) => {
         .from('.img-5-container-2008', {duration:.5, opacity:0})
         .addLabel("img-5-2008")
         .from('.edition-aftermovie-container-2008', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2008', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2008', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2008', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2008', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-4")
@@ -235,7 +235,7 @@ const Home = (props) => {
         .from('.img-5-container-2009', {duration:.5, opacity:0})
         .addLabel("img-5-2009")
         .from('.edition-aftermovie-container-2009', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2009', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2009', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2009', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2009', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-5")
@@ -262,7 +262,7 @@ const Home = (props) => {
         .from('.img-5-container-2010', {duration:.5, opacity:0})
         .addLabel("img-5-2010")
         .from('.edition-aftermovie-container-2010', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2010', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2010', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2010', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2010', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-6")
@@ -289,7 +289,7 @@ const Home = (props) => {
         .from('.img-5-container-2011', {duration:.5, opacity:0})
         .addLabel("img-5-2011")
         .from('.edition-aftermovie-container-2011', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2011', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2011', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2011', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2011', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-7")
@@ -316,7 +316,7 @@ const Home = (props) => {
         .from('.img-5-container-2012', {duration:.5, opacity:0})
         .addLabel("img-5-2012")
         .from('.edition-aftermovie-container-2012', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2012', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2012', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2012', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2012', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-8")
@@ -343,7 +343,7 @@ const Home = (props) => {
         .from('.img-5-container-2013', {duration:.5, opacity:0})
         .addLabel("img-5-2013")
         .from('.edition-aftermovie-container-2013', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2013', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2013', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2013', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2013', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-9")
@@ -370,7 +370,7 @@ const Home = (props) => {
         .from('.img-5-container-2014', {duration:.5, opacity:0})
         .addLabel("img-5-2014")
         .from('.edition-aftermovie-container-2014', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2014', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2014', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2014', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2014', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-10")
@@ -397,7 +397,7 @@ const Home = (props) => {
         .from('.img-5-container-2015', {duration:.5, opacity:0})
         .addLabel("img-5-2015")
         .from('.edition-aftermovie-container-2015', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2015', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2015', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2015', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2015', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-11")
@@ -424,7 +424,7 @@ const Home = (props) => {
         .from('.img-5-container-2016', {duration:.5, opacity:0})
         .addLabel("img-5-2016")
         .from('.edition-aftermovie-container-2016', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2016', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2016', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2016', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2016', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-12")
@@ -451,7 +451,7 @@ const Home = (props) => {
         .from('.img-5-container-2017', {duration:.5, opacity:0})
         .addLabel("img-5-2017")
         .from('.edition-aftermovie-container-2017', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2017', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2017', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2017', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2017', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-13")
@@ -478,7 +478,7 @@ const Home = (props) => {
         .from('.img-5-container-2018', {duration:.5, opacity:0})
         .addLabel("img-5-2018")
         .from('.edition-aftermovie-container-2018', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2018', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2018', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2018', {display:"flex"}, {display:"none"}) 
         .from('.aftermovie-container-2018', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-14")
@@ -505,10 +505,12 @@ const Home = (props) => {
         .from('.img-5-container-2019', {duration:.5, opacity:0})
         .addLabel("img-5-2019")
         .from('.edition-aftermovie-container-2019', {duration:.5, xPercent:-100, display:"none"})
-        .from('.aftermovie-text-2019', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
+        .from('.aftermovie-text-2019', {duration:.5, transform:"scale(6)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2019', {display:"flex"}, {display:"none"})
         .from('.aftermovie-container-2019', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-15")
+        .from('.thanks-container', {duration:.5, display:"none", yPercent:100})
+        .from('.thanks-text-container h1, .thanks-link-container p, .thanks-text-container h2', {duration:1, opacity:0, y:300, stagger:.2, ease:"power3"})
     },[])
 
     return (
@@ -564,6 +566,18 @@ const Home = (props) => {
           ))}
         </div>
         <TransitionUi />
+        <div className="thanks-container">
+            <div className="thanks-shader">
+              <div className="thanks-text-container">
+                <h1>Thanks for watching !</h1>
+                <div className="thanks-link-container">
+                  <p>All the pictures where found on <a href="https://365.tomorrowland.com/">https://365.tomorrowland.com/</a></p>
+                  <p>Thank you for all those beautiful memories you provide to us !</p>                  
+                </div>
+                <h2>See you in 2021 !</h2>
+              </div>
+            </div>
+        </div>
       </div>
     );
 }
