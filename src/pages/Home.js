@@ -11,7 +11,6 @@ const Home = (props) => {
 
     const {editions} = props;
     const [tl] = useState(gsap.timeline({paused:true}));
-    const [tlTr] = useState(gsap.timeline({paused:true}));
 
     const logKey = (e) => {
       const current = tl.currentLabel();
@@ -32,7 +31,7 @@ const Home = (props) => {
     
     useEffect(() => {
       document.addEventListener('keypress', logKey);
-    },[])
+    })
 
     useEffect(() => {
       window.onresize = () => {
@@ -511,7 +510,7 @@ const Home = (props) => {
         .addLabel("aftermovie-15")
         .from('.thanks-container', {duration:.5, display:"none", yPercent:100})
         .from('.thanks-text-container h1, .thanks-link-container p, .thanks-text-container h2', {duration:1, opacity:0, y:300, stagger:.2, ease:"power3"})
-    },[])
+    })
 
     return (
       <div className="main-app-container">

@@ -1,7 +1,6 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React from 'react';
 
 const TimeLine = (props) => {
-
 
     const { year, handleClick } = props;
 
