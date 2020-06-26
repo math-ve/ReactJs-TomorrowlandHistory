@@ -15,7 +15,6 @@ const Home = (props) => {
 
     const logKey = (e) => {
       const current = tl.currentLabel();
-      console.log(e);
       if(e.code === "KeyN")
       {
         tl.tweenTo(tl.nextLabel());  
@@ -34,6 +33,13 @@ const Home = (props) => {
     useEffect(() => {
       document.addEventListener('keypress', logKey);
     },[])
+
+    useEffect(() => {
+      window.onresize = () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);  
+      }
+    })
   
     //HEADER TEXT ANIMATION
     useEffect(() => {
