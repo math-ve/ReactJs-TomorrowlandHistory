@@ -100,9 +100,6 @@ const Editions = (props) => {
                 <div className="aftermovie-text-container">
                     <h2 className={`aftermovie-text aftermovie-text-${data.year}`}>Official Aftermovie</h2>
                 </div>
-                <video muted autoPlay loop className="aftermovie-bg-video">
-                    <source src="/assets/stars.mp4" type="video/mp4" />
-                </video>
                 <div className={`aftermovie-container aftermovie-container-${data.year}`}>
                     <iframe title={`aftermovie-${data.year}`} className={`aftermovie aftermovie-${data.year}`} src={`https://www.youtube.com/embed/${data.aftermovie}`} allowFullScreen></iframe>
                 </div>
