@@ -129,7 +129,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2005', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2005', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2005', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2005', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2005', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-1")
         //2006
         .from('.edition-enter-animation-container-2006', {display:"none"})
@@ -156,7 +156,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2006', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2006', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2006', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2006', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2006', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-2")
         //2007
         .from('.edition-enter-animation-container-2007', {display:"none"})
@@ -183,7 +183,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2007', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2007', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2007', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2007', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2007', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-3")
         //2008
         .from('.edition-enter-animation-container-2008', {display:"none"})
@@ -210,7 +210,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2008', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2008', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2008', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2008', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2008', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-4")
         //2009
         .from('.edition-enter-animation-container-2009', {display:"none"})
@@ -237,7 +237,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2009', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2009', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2009', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2009', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2009', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-5")
         //2010
         .from('.edition-enter-animation-container-2010', {display:"none", display:"none"})
@@ -264,7 +264,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2010', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2010', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2010', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2010', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2010', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-6")
         //2011
         .from('.edition-enter-animation-container-2011', {display:"none"})
@@ -291,7 +291,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2011', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2011', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2011', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2011', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2011', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-7")
         //2012
         .from('.edition-enter-animation-container-2012', {display:"none"})
@@ -318,7 +318,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2012', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2012', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2012', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2012', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2012', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-8")
         //2013
         .from('.edition-enter-animation-container-2013', {display:"none"})
@@ -345,7 +345,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2013', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2013', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2013', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2013', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2013', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-9")
         //2014
         .from('.edition-enter-animation-container-2014', {display:"none"})
@@ -372,7 +372,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2014', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2014', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2014', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2014', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2014', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-10")
         //2015
         .from('.edition-enter-animation-container-2015', {display:"none"})
@@ -399,7 +399,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2015', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2015', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2015', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2015', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2015', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-11")
         //2016
         .from('.edition-enter-animation-container-2016', {display:"none"})
@@ -426,7 +426,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2016', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2016', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2016', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2016', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2016', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-12")
         //2017
         .from('.edition-enter-animation-container-2017', {display:"none"})
@@ -453,7 +453,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2017', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2017', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2017', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2017', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2017', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-13")
         //2018
         .from('.edition-enter-animation-container-2018', {display:"none"})
@@ -480,7 +480,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2018', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2018', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2018', {display:"flex"}, {display:"none"}) 
-        .from('.aftermovie-container-2018', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2018', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-14")
         //2019
         .from('.edition-enter-animation-container-2019', {display:"none"})
@@ -507,7 +507,7 @@ const Home = (props) => {
         .from('.edition-aftermovie-container-2019', {duration:.5, xPercent:-100, display:"none"})
         .from('.aftermovie-text-2019', {duration:.5, transform:"scale(6)", filter:"blur(50px)", opacity:0, display:"none"})
         .fromTo('.edition-infos-container-2019', {display:"flex"}, {display:"none"})
-        .from('.aftermovie-container-2019', {duration:.5, opacity:0, transform:'scale(0)', filter:"blur(50px)", display:"none"})
+        .from('.aftermovie-container-2019', {duration:.5, opacity:0, transform:'scale(0)', display:"none"})
         .addLabel("aftermovie-15")
     },[])
 
