@@ -1147,8 +1147,13 @@ TRANSITION UL
     font-size: 1.8vw;
   }
 
+  .edition-aftermovie-container {
+    background: rgb(80,80,80);
+    background: radial-gradient(circle, rgba(80,80,80,1) 0%, rgba(49,49,49,1) 16%, rgba(23,23,23,1) 39%, rgba(0,0,0,1) 100%);
+  }
+
   .aftermovie-bg-video {
-    width: auto;
+    display: none;
   }
 
   .aftermovie {
