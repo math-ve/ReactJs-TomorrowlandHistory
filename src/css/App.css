@@ -97,7 +97,6 @@ DEVICE CHOICE
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform-origin: top left;
 }
 
 .choice-title {
@@ -129,6 +128,12 @@ DEVICE CHOICE
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.touch-device-container:hover {
+  background-color: rgb(58, 58, 58);
 }
 
 .touch-device-title {
@@ -164,6 +169,12 @@ DEVICE CHOICE
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.keyboard-device-container:hover {
+  background-color: rgb(58, 58, 58);
 }
 
 .keyboard-device-title {

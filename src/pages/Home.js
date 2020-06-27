@@ -23,7 +23,7 @@ const Home = (props) => {
       {
         gsap.to('.desktop-h1, .desktop-h2', {display:"block"});
       }
-      gsap.to('.device-choice-container', {duration:2, transform:"scale(0)", opacity:0})
+      gsap.to('.device-choice-container', {duration:2, yPercent:-100 , ease:"power3"})
     }
 
     const logKey = (e) => {
