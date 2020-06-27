@@ -52,10 +52,10 @@ const Editions = (props) => {
                     <div className={`editions-three-part-container editions-three-part-container-${data.year}`}>
                         <div className={`editions-left-part editions-left-part-${data.year}`}>
                             <div className={`img-container img-2-container img-2-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[1]}`} alt="tml-cover" className={`editions-images img-2 img-2-${data.year}`}  onClick={handleImgClick}/>
+                                <img src={`/assets/${data.cover[1]}`} alt="tml-cover" className={`editions-images img-2 img-2-${data.year}`} onClick={handleImgClick}/>
                             </div>
                             <div className={`img-container img-3-container img-3-container-${data.year}`}>
-                                <img src={`/assets/${data.cover[2]}`} alt="tml-cover" className={`editions-images img-3 img-3-${data.year}`}  onClick={handleImgClick}/>
+                                <img src={`/assets/${data.cover[2]}`} alt="tml-cover" className={`editions-images img-3 img-3-${data.year}`} onClick={handleImgClick}/>
                             </div>
                         </div>
                         <div className={`editions-mid-part editions-mid-part-${data.year}`}>

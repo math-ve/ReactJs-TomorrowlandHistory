@@ -80,6 +80,143 @@ LOADING HOME
 }
 
 
+/*
+DEVICE CHOICE
+*/
+
+.device-choice-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  z-index: 1;
+  background: rgb(68,68,68);
+  background: linear-gradient(0deg, rgba(68,68,68,1) 0%, rgba(0,0,0,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: top left;
+}
+
+.choice-title {
+  color: #FFE73B;
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 1.8vw;
+  font-weight: 200;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.device-img {
+  width: 30%;
+}
+
+.touch-device-container {
+  height: 50%;
+  width: 40%;
+  border: 2px solid #FFE73B;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.touch-device-title {
+  color: #FFE73B;
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.touch-device-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.touch-device-text {
+  color: #FFE73B;
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+.separator {
+  height: 80%;
+  width: 3px;
+  background-color: #FFE73B;
+}
+
+.keyboard-device-container {
+  height: 50%;
+  width: 40%;
+  border: 2px solid #FFE73B;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.keyboard-device-title {
+  color: #FFE73B;
+  font-size: 1.5vw;
+  font-weight: 200;
+}
+
+.keyboard-device-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.keyboard-device-text {
+  color: #FFE73B;
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+/*
+PHONE BUTTONS
+*/
+
+
+.phone-buttons-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height : calc(var(--vh, 1vh)*100);
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+}
+
+.phone-right-button {
+  width: 20%;
+  height: 65%;
+  border-radius: 30px 0 0 30px;
+  pointer-events: all;
+}
+
+.phone-left-button {
+  width: 20%;
+  height: 65%;
+  border-radius: 0 30px 30px 0;
+  pointer-events: all;
+}
+
 /*HEADER-COVER*/
 
 .header-cover {
@@ -141,6 +278,14 @@ LOADING HOME
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 1.15vw;
+}
+
+.desktop-h1 {
+  display: none;
+}
+
+.desktop-h2 {
+  display: none;
 }
 
 .mobile-h1 {
@@ -344,6 +489,7 @@ EDITIONS
 
 .editions-main-container {
   width: 100%;
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: absolute;
   display: flex;
@@ -584,13 +730,13 @@ EDITIONS
   height: 45%;
   background: rgb(255,123,0);
   background: radial-gradient(circle, rgba(255,123,0,1) 0%, rgba(203,98,0,1) 0%, rgba(174,84,0,1) 5%, rgba(133,64,0,1) 11%, rgba(101,48,0,1) 20%, rgba(56,27,0,1) 29%, rgba(30,15,0,1) 43%, rgba(24,12,0,1) 53%, rgba(23,11,0,1) 61%, rgba(22,11,0,1) 70%, rgba(0,0,0,1) 100%);
+  pointer-events: all;
 }
 
 .editions-images {
   max-width: 95%;
   max-height: 95%;
   transition: all 1s ease;
-  pointer-events: all;
 }
 
 .editions-images:hover {
@@ -992,31 +1138,48 @@ a {
     height: auto;
   }
 
-  .phone-buttons-container {
-    display: flex;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    height : calc(var(--vh, 1vh)*100);
-    justify-content: space-between;
-    align-items: center;
-    pointer-events: none;
-    z-index: 10;
+  .choice-title {
+    font-size: 4vw;
+    padding-bottom: 40px;
   }
 
-  .phone-right-button {
-    width: 20%;
-    height: 65%;
-    border-radius: 30px 0 0 30px;
-    pointer-events: all;
+  .choice-container {
+    flex-direction: column;
   }
 
-  .phone-left-button {
-    width: 20%;
-    height: 65%;
-    border-radius: 0 30px 30px 0;
-    pointer-events: all;
+  .touch-device-container {
+    height: 35%;
+    width: 70%;
+    border: 1px solid #FFE73B;
+    border-radius: 10px;
+  }
+
+  .touch-device-title {
+    font-size: 3vw;
+  }
+
+  .touch-device-text {
+    font-size: 3vw;
+  }
+
+  .separator {
+    height: 1px;
+    width: 90%;
+  }
+
+  .keyboard-device-container {
+    height: 35%;
+    width: 70%;
+    border: 1px solid #FFE73B;
+    border-radius: 10px;
+  }
+
+  .keyboard-device-title {
+    font-size: 3vw;
+  }
+
+  .keyboard-device-text {
+    font-size: 3vw;
   }
 
   .header-logo {
@@ -1032,22 +1195,6 @@ a {
     font-size: 4vw;
     text-align: center;
     padding: 0 10px;
-  }
-
-  .desktop-h1 {
-    display: none;
-  }
-
-  .desktop-h2 {
-    display: none;
-  }
-
-  .mobile-h1 {
-    display: block;
-  }
-
-  .mobile-h2 {
-    display: block;
   }
 
   .howto-container h2 {
