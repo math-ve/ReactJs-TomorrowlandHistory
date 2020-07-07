@@ -5,6 +5,7 @@ import Editions from '../comps/Editions';
 import LoadingHome from '../comps/LoadingHome';
 import TransitionUi from '../comps/TransitionUl';
 import PhoneButtons from '../comps/PhoneButtons';
+import Explanations from '../comps/Explanations';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -62,7 +63,8 @@ const Home = (props) => {
   
     //LIVE TODAY ANIMATIONS
     useEffect(() => {
-      tl.addLabel('start')
+      tl.to('.explanations-container',.5, {yPercent:-100})
+        .addLabel('start')
         //PART22222222222
         .from('.announcement-container', {duration:.5, yPercent:100})
         .from(".announcement-bg-container", {duration: 1, opacity: 0}, "-=.3")
@@ -528,6 +530,7 @@ const Home = (props) => {
     return (
       <div className="main-app-container">
         <LoadingHome />
+        <Explanations />
         <PhoneButtons handleClick={logKey}/>
         <div className="header-cover">
           <div className="header-shader">
