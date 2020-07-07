@@ -850,6 +850,7 @@ hr {
 .editions-theme-text {
   font-size: 2vw;
   max-width: 96%;
+  margin: auto;
 }
 
 .editions-date-text {

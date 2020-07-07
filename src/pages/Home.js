@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {gsap, ScrollTrigger } from "gsap/all";
+import { isBrowser, isMobile } from "react-device-detect";
 import Editions from '../comps/Editions';
 import LoadingHome from '../comps/LoadingHome';
 import TransitionUi from '../comps/TransitionUl';
 import PhoneButtons from '../comps/PhoneButtons';
-import DeviceChoice from '../comps/DeviceChoice';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,18 +14,15 @@ const Home = (props) => {
     const {editions} = props;
     const [tl] = useState(gsap.timeline({paused:true}));
 
-    const handleChoice = (device) => {
-      if (device === "touch")
+    useEffect(() => {
+      if (isBrowser)
+        gsap.to('.desktop-h1, .desktop-h2', {display:"block"});
+      if (isMobile)
       {
         gsap.to('.phone-buttons-container', {display: "flex"});
         gsap.to('.mobile-h1, .mobile-h2', {display:"block"});
       }
-      else if (device === "keyboard")
-      {
-        gsap.to('.desktop-h1, .desktop-h2', {display:"block"});
-      }
-      gsap.to('.device-choice-container', {duration:2, yPercent:-100 , ease:"power3"})
-    }
+    })
 
     const logKey = (e) => {
       const current = tl.currentLabel();
@@ -530,7 +528,6 @@ const Home = (props) => {
     return (
       <div className="main-app-container">
         <LoadingHome />
-        <DeviceChoice handleChoice={handleChoice} />
         <PhoneButtons handleClick={logKey}/>
         <div className="header-cover">
           <div className="header-shader">
